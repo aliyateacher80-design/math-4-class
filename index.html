@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-сынып Математика: Есептер жинағы (Pixar Style)</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FF6B6B;
+            --secondary: #4ECDC4;
+            --accent: #FFE66D;
+            --dark: #2D3436;
+            --light: #F7F9FC;
+            --level1: #2ecc71;
+            --level2: #f39c12;
+            --level3: #e74c3c;
+        }
+
+        body {
+            font-family: 'Fredoka', cursive, sans-serif;
+            background: linear-gradient(135deg, #a8ede0 0%, #fed6e3 100%);
+            color: var(--dark);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            background: white;
+            padding: 25px;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            border: 4px solid var(--secondary);
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 2.2rem;
+            margin: 0 0 5px 0;
+        }
+
+        p.subtitle {
+            color: #636e72;
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        /* Filter buttons */
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: white;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 50px;
+            font-family: 'Fredoka', cursive;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            transition: all 0.2s ease;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(255,107,107,0.4);
+        }
+
+        /* Task Card */
+        .task-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            border-left: 10px solid var(--level1);
+            transition: transform 0.2s ease;
+        }
+
+        .task-card[data-level="level2"] {
+            border-left-color: var(--level2);
+        }
+
+        .task-card[data-level="level3"] {
+            border-left-color: var(--level3);
+        }
+
+        .task-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .task-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .badge {
+            background: #e8f8f5;
+            color: var(--level1);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: bold;
+            border: 1px solid var(--level1);
+        }
+
+        .badge-level2 {
+            background: #fef5e7;
+            color: var(--level2);
+            border-color: var(--level2);
+        }
+
+        .badge-
